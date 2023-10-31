@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Teste Padrao",
+      "setup": "",
+      "run": "make test",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": null
+    }
+  ]
+}
