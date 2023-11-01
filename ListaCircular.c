@@ -64,9 +64,9 @@ void Remove_List_End(TListaCircular *lista)
     }
     ant->prox = lista->inicio;
 }
-_Bool Calculo_Posicao(TListaCircular *lista, int pos, int tamanho)
+int Calculo_Posicao(TListaCircular *lista, int pos, int tamanho)
 {
-    if(lista->inicio == NULL)   return false;
+    if(lista->inicio == NULL)   return -1;
     else{
         TNo *aux = lista->inicio;
         TNo *antecessor;
@@ -96,8 +96,8 @@ _Bool Calculo_Posicao(TListaCircular *lista, int pos, int tamanho)
             }
             tamanho--;
         }while(tamanho > 1);
+    return aux->info;
     }
-    return true;
 }
 void Print_List(TListaCircular *lista)
 {   

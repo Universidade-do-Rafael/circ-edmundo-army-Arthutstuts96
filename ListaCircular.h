@@ -6,7 +6,7 @@ typedef struct _lista TListaCircular;
 
 TListaCircular *Create_List();
 _Bool Insert_List_End(TListaCircular *, int);
-_Bool Calculo_Posicao(TListaCircular *, int, int);
+int Calculo_Posicao(TListaCircular *, int, int);
 
 void Print_List(TListaCircular *);
 void Destroy_List(TListaCircular *);
